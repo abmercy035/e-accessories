@@ -1,0 +1,22 @@
+:root {
+ --product-pc: rgb(181, 126, 22);
+ --btn-ic: hsl(174, 99%, 35%);
+ --bgc: #222222;
+ --title-tc: hsl(174, 99%, 35%);
+ --product-nc: #fff;
+ --navLink-color: #fff;
+ --romove-error-c: #ce0505e3;
+ --pryBgc: hsl(174, 99%, 35%);
+ --btn-tc: #222222;
+ --xx-large-fs: 18px;
+ --x-large-fs: 16px;
+ --large-fs: 14px;
+ --medium-fs: 12.5px;
+ --small-fs: 12px;
+ --x-small-fs: 11px;
+ --bc: hsl(174, 99%, 35%);
+ --overlayBgc: #2229;
+ --digit-ff: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ --title-ff: Verdana, Geneva, Tahoma, sans-serif;
+ --text-ff: Arial, Helvetica, sans-serif;
+}

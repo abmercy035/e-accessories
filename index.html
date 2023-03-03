@@ -5,28 +5,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="topography.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="control.css">
+  <link rel="stylesheet" href="devices.css">
   <script src="main.js" defer="true"></script>
   <title>Document</title>
 </head>
 
 <body>
-<div id="overlay">
-</div>
+  <div id="overlay">
+  </div>
   <header>
+    <!-- if mobile view show menu icon -->
     <div class="site-identity">
-      <!-- if mobile view show menu icon -->
       <div class="site-nav-icon">
         <img src="icons/menu_alt_04.svg" alt="" id="site-nav-icon">
       </div>
 
       <div class="logo-container">
-
         <img src="imgs/bg.png" alt="" class="logo-image" />
-
       </div>
 
-      <!-- if mobile view show cart icon -->
       <div class="cart-icon">
         <img src="icons/home_plus.svg" alt="" id="cart-icon">
       </div>
@@ -35,106 +35,107 @@
     <div class="search">
       <div class="search-field">
         <div class="search-icon"> <img src="icons/search.svg" alt=""></div>
-        <input type="text" class="search-input" placeholder="Search">
+        <input type="text" class="search-input" placeholder="Search Product">
       </div>
       <button class="search-button">Search</button>
     </div>
   </header>
+  <nav class="site-side-bar">
+    <div class="logo-container">
+      <img src="imgs/bg.png" alt="" class="logo-image" />
+    </div>
+    <div class="site-map">
+      <div class="site-nav">
+        <div class="nav-title">Site Nav</div>
+        <ul>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/home_alt_outline.svg" alt=""> <a href="#" class="nav-link">
+              home
+            </a>
+          </li>
+          <li class="nav-item" id="cart-tab">
+            <img class="nav-item-icon" src="icons/home_plus.svg" alt=""> <a href="#" class="nav-link">
+              my cart
+            </a>
+          </li>
 
-  <main>
-    <nav class="site-side-bar">
-      <div class="site-map">
-        <div class="site-nav">
-          <div class="nav-title">Site Nav</div>
-          <ul>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/home_alt_outline.svg" alt=""> <a href="#" class="nav-link">
-                home
-              </a>
-            </li>
-            <li class="nav-item" id="cart-tab">
-              <img class="nav-item-icon" src="icons/home_plus.svg" alt=""> <a href="#" class="nav-link">
-            my cart
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/mail.svg" alt=""> <a href="#" class="nav-link">
-                contact
-              </a>
-            </li>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/info_circle_outline.svg" alt=""> <a href="#" class="nav-link">
-                about
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="site-nav">
-          <div class="nav-title">Products</div>
-          <ul>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/tablet.svg" alt=""> <a href="#tabs" class="nav-link">
-                tabs
-              </a>
-            </li>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/mobile_alt.svg" alt=""> <a href="#phones" class="nav-link">
-                phones
-              </a>
-            </li>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/laptop.svg" alt=""> <a href="#laptops" class="nav-link">
-                laptops
-              </a>
-            </li>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/monitor.svg" alt=""> <a href="#monitors" class="nav-link">
-                monitors
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="site-nav">
-          <div class="nav-title">Others</div>
-          <ul>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/help_circle_outline.svg" alt=""> <a href="#" class="nav-link">
-                help
-              </a>
-            </li>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/phone-outline.svg" alt=""> <a href="#" class="nav-link">
-                support
-              </a>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/message_writing.svg" alt=""> <a href="#" class="nav-link">
-                feedback
-              </a>
-            </li>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/heart_outline.svg" alt=""> <a href="#" class="nav-link">
-                subscribe
-              </a>
-            </li>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/flag_outline.svg" alt=""> <a href="#" class="nav-link">
-                privacy polices
-              </a>
-            </li>
-            <li class="nav-item">
-              <img class="nav-item-icon" src="icons/warning-outline.svg" alt=""> <a href="#" class="nav-link">
-                Terms & conditions
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/mail.svg" alt=""> <a href="#" class="nav-link">
+              contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/info_circle_outline.svg" alt=""> <a href="#" class="nav-link">
+              about
+            </a>
+          </li>
+        </ul>
       </div>
 
-    </nav>
+      <div class="site-nav">
+        <div class="nav-title">Products</div>
+        <ul>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/tablet.svg" alt=""> <a href="#tabs" class="nav-link">
+              tabs
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/mobile_alt.svg" alt=""> <a href="#phones" class="nav-link">
+              phones
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/laptop.svg" alt=""> <a href="#laptops" class="nav-link">
+              laptops
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/monitor.svg" alt=""> <a href="#monitors" class="nav-link">
+              monitors
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-nav">
+        <div class="nav-title">Others</div>
+        <ul>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/help_circle_outline.svg" alt=""> <a href="#" class="nav-link">
+              help
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/phone-outline.svg" alt=""> <a href="#" class="nav-link">
+              support
+            </a>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/message_writing.svg" alt=""> <a href="#" class="nav-link">
+              feedback
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/heart_outline.svg" alt=""> <a href="#" class="nav-link">
+              subscribe
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/flag_outline.svg" alt=""> <a href="#" class="nav-link">
+              privacy polices
+            </a>
+          </li>
+          <li class="nav-item">
+            <img class="nav-item-icon" src="icons/warning-outline.svg" alt=""> <a href="#" class="nav-link">
+              Terms & conditions
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
     <section class="product-containers">
-      <div class="products-item-contanier" id="phones">
+      <div class="products-item-container" id="phones">
         <div class="product-item-title">Phones</div>
         <div class="products">
 
@@ -149,7 +150,7 @@
                 Asus Laptop
               </div>
               <div class="item-price">
-                5960$
+                5960 $
               </div>
             </div>
           </div>
@@ -185,7 +186,7 @@
           </div>
         </div>
       </div>
-      <div class="products-item-contanier" id="tabs">
+      <div class="products-item-container" id="tabs">
         <div class="product-item-title">Tabs</div>
         <div class="products">
           <div class="product-items">
@@ -250,7 +251,7 @@
           </div>
         </div>
       </div>
-      <div class="products-item-contanier" id="laptops">
+      <div class="products-item-container" id="laptops">
         <div class="product-item-title">Laptops</div>
         <div class="products">
           <div class="product-items">
@@ -315,7 +316,7 @@
           </div>
         </div>
       </div>
-      <div class="products-item-contanier" id="monitors">
+      <div class="products-item-container" id="monitors">
         <div class="product-item-title">Monitors</div>
         <div class="products">
           <div class="product-items">
@@ -404,7 +405,7 @@
           </div>
           <div class="product-quantity">
             <div> <img class="increment-qunatity" src="icons/caret_up.svg" alt=""> </div>
-            <div class="item-price">34</div>
+            <div class="item-quantity">34</div>
             <div> <img class="increment-qunatity" src="icons/caret_down.svg" alt=""> </div>
           </div>
         </div>
@@ -426,7 +427,7 @@
           </div>
           <div class="product-quantity">
             <div> <img class="increment-qunatity" src="icons/caret_up.svg" alt=""> </div>
-            <div class="item-price">34</div>
+            <div class="item-quantity">34</div>
             <div> <img class="increment-qunatity" src="icons/caret_down.svg" alt=""> </div>
           </div>
         </div>
@@ -448,7 +449,7 @@
           </div>
           <div class="product-quantity">
             <div> <img class="increment-qunatity" src="icons/caret_up.svg" alt=""> </div>
-            <div class="item-price">34</div>
+            <div class="item-quantity">34</div>
             <div> <img class="increment-qunatity" src="icons/caret_down.svg" alt=""> </div>
           </div>
         </div>
@@ -470,7 +471,7 @@
           </div>
           <div class="product-quantity">
             <div> <img class="increment-qunatity" src="icons/caret_up.svg" alt=""> </div>
-            <div class="item-price">34</div>
+            <div class="item-quantity">34</div>
             <div> <img class="increment-qunatity" src="icons/caret_down.svg" alt=""> </div>
           </div>
         </div>
@@ -492,7 +493,7 @@
           </div>
           <div class="product-quantity">
             <div> <img class="increment-qunatity" src="icons/caret_up.svg" alt=""> </div>
-            <div class="item-price">34</div>
+            <div class="item-quantity">34</div>
             <div> <img class="increment-qunatity" src="icons/caret_down.svg" alt=""> </div>
           </div>
         </div>
@@ -514,16 +515,16 @@
           </div>
           <div class="product-quantity">
             <div> <img class="increment-qunatity" src="icons/caret_up.svg" alt=""> </div>
-            <div class="item-price">34</div>
+            <div class="item-quantity">34</div>
             <div> <img class="increment-qunatity" src="icons/caret_down.svg" alt=""> </div>
           </div>
         </div>
       </div>
       <div class="continue-purchase-container">
-        <div class="item-price-sum">
-          <span>Total : </span>
-          <span class="price-container">
-            <span class="price-digit">50000 </span>
+        <div class="total-price-container">
+          <span id="total">Total : </span>
+          <span class="total-price">
+            <span class="price-total-digit">59000</span>
             <span class="currency-symbol">$ </span>
           </span>
         </div>
@@ -534,7 +535,7 @@
   </aside>
 
   <footer>
-    E-accessories|&copy;2023 | Modern E-Commerce Site
+    E-accessories&copy;2023 | Modern E-Commerce Site
   </footer>
 </body>
 
