@@ -40,7 +40,7 @@
     color: var(--product-pc);
     height: 100%;
     width: 30%;
-    font-size:var(--medium-fs);
+    font-size: var(--medium-fs);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
   }
@@ -69,7 +69,8 @@
     max-height: 350px;
     height: 100%;
     padding: 0px;
-    border: #ffffff7e 2px solid;
+    /* border: #ffffff7e 2px solid; */
+    background-color: #222;
   }
 
   .product-containers .products-item-container .products .product-items .item-img img {
@@ -117,6 +118,7 @@
 
   .product-containers .products-item-container .product-item-title {
     background-color: #222222;
+    border:solid 1px rgb(59, 59, 59);
     font-size: var(--x-large-fs);
   }
 
@@ -162,6 +164,7 @@
   .product-containers .products-item-container .product-item-title {
     background-color: #222222;
     font-size: var(--xx-large-fs);
+    border:solid 1px rgb(59, 59, 59);
   }
 
   .product-containers .products-item-container .products .product-items {
@@ -171,7 +174,7 @@
 
   .product-containers .products-item-container .products .product-items .item-img {
     height: 200px;
-    border: #ffffff7e 2px solid;
+    /* border: #ffffff7e 2px solid; */
   }
 
   aside .cart-container .cart-item-container .cart-items .product-items .item-info :is(.item-name) {

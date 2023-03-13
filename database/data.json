@@ -1,0 +1,106 @@
+{
+ "phones": [
+  {
+   "name": "Iphone 6 pro",
+   "price": "120",
+   "img": "imgs/img10.png",
+   "id": 41
+  },
+  {
+   "name": "Samsung fold",
+   "price": "200",
+   "img": "imgs/img9.png",
+   "id": 42
+  },
+  {
+   "name": "Infinix hot 7",
+   "price": "1200",
+   "img": "imgs/img6.png",
+   "id": 43
+  },
+  {
+   "name": "Techno Spark 9",
+   "price": "1200",
+   "img": "imgs/img3.png",
+   "id": 44
+  }
+ ],
+ "tabs": [
+  {
+   "name": "Vivo Tab",
+   "price": "100",
+   "img": "imgs/img8.png",
+   "id": 31
+  },
+  {
+   "name": "Nokia Tab",
+   "price": "250",
+   "img": "imgs/img11.png",
+   "id": 32
+  },
+  {
+   "name": "Samsung tablet",
+   "price": "400",
+   "img": "imgs/img1.png",
+   "id": 33
+  },
+  {
+   "name": "Apple Tab",
+   "price": "310",
+   "img": "imgs/img3.png",
+   "id": 34
+  }
+ ],
+ "laptops": [
+  {
+   "name": "Asus",
+   "price": "1200",
+   "img": "imgs/img4.png",
+   "id": 21
+  },
+  {
+   "name": "Hp elite book",
+   "price": "1200",
+   "img": "imgs/img2.png",
+   "id": 22
+  },
+  {
+   "name": "Hp pro book",
+   "price": "1200",
+   "img": "imgs/img10.png",
+   "id": 23
+  },
+  {
+   "name": "Lenovo",
+   "price": "1200",
+   "img": "imgs/img6.png",
+   "id": 24
+  }
+ ],
+ "monitors": [
+  {
+   "name": "LG 12ft Display",
+   "price": "1200",
+   "img": "imgs/img1.png",
+   "id": 1
+  },
+  {
+   "name": "LG Natural Display",
+   "price": "1200",
+   "img": "imgs/img3.png",
+   "id": 11
+  },
+  {
+   "name": "LG 45inch LED ",
+   "price": "1200",
+   "img": "imgs/img4.png",
+   "id": 12
+  },
+  {
+   "name": "Samsung 45inch LED ",
+   "price": "1200",
+   "img": "imgs/img2.png",
+   "id": 13
+  }
+ ]
+}
