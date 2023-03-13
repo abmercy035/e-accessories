@@ -84,14 +84,16 @@ const updateTotalPrice = () =>
   var total_price = 0;
   cart_product_list.forEach( item =>
   {
-    // total_price += item.price * item.quatity
     total_price += ( Number( item.price ) * Number( item.quantity ) )
-    console.log( total_price )
   } )
   price_total_digit.textContent = total_price
+  console.log( cart_product_list )
 }
+
 const updateCart = ( img, name, price, id ) =>
-{  //item-container 
+{
+  updateTotalPrice()
+  //item-container
   const new_cart_items = document.createElement( 'div' )
   new_cart_items.className = "cart-items"
 
@@ -154,17 +156,24 @@ const updateCart = ( img, name, price, id ) =>
   increment_btn_img.addEventListener( "click", ( e ) =>
   {
     ++( e.target.parentElement.parentElement.children[ 1 ].innerText )
+    cart_product_list.forEach( ( item ) =>
+    {
+      ( item.id == id ) && ++item.quantity
+      updateTotalPrice()
+    }
+    )
   } )
   increment_btn_container.appendChild( increment_btn_img )
   const decrement_btn_container = document.createElement( 'div' )
   const decrement_btn_img = document.createElement( 'img' )
   decrement_btn_img.src = "icons/caret_down.svg"
   decrement_btn_img.className = "increment-qunatity"
-  decrement_btn_img.addEventListener( "click", ( e, id ) =>
+  decrement_btn_img.addEventListener( "click", ( e) =>
   {
-    --( e.target.parentElement.parentElement.children[ 1 ].innerText )
+    Number( e.target.parentElement.parentElement.children[ 1 ].innerText ) && --( e.target.parentElement.parentElement.children[ 1 ].innerText );
     cart_product_list.forEach( item =>
     {
+        ( item.id == id ) && item.quantity && --item.quantity
       updateTotalPrice()
     } )
   } )
