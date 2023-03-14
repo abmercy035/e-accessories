@@ -62,9 +62,47 @@ nav_link.forEach( link =>
 
 const pushToCart = ( img, name, price, id ) =>
 {
-  cart_product_list.push( { img, name, price, id, quantity: 1 } ) &&
-    updateCart( img, name, price, id )
-  console.log( cart_product_list )
+  const isInCart = cart_product_list.filter( item => ( item.id === id ) )
+  console.log( isInCart )
+  if ( isInCart.length === 0 )
+  {
+    cart_product_list.push( { img, name, price, id, quantity: 1 } ) &&
+      updateCart( img, name, price, id )
+  }
+  else
+  {
+    const popup = document.createElement( "div" );
+    popup.style.position = "fixed"
+    popup.style.top = "15%"
+    popup.style.zIndex = "9"
+    popup.style.borderRadius = "100px"
+    popup.style.left = "10%"
+    popup.style.padding = "10px"
+    popup.style.backgroundColor = "red"
+    popup.textContent = "Product Already in cart"
+    document.querySelector( "body" ).appendChild( popup )
+    setTimeout( () =>
+    {
+      popup.style.top = "10%"
+      popup.style.opacity = "0.7"
+      popup.style.fontSize = "12px"
+      popup.style.padding = "5px"
+      popup.style.backgroundColor = "red"
+      setTimeout( () =>
+      {
+        popup.style.top = "8%"
+        popup.style.opacity = "0.5"
+        popup.style.fontSize = "8px"
+        popup.style.padding = "5px"
+        popup.style.backgroundColor = "red"
+        setTimeout( () =>
+        {
+          document.querySelector( "body" ).removeChild( popup )
+        }, 300 );
+      }, 400 );
+
+    }, 500 );
+  }
 }
 
 
@@ -86,7 +124,7 @@ const updateTotalPrice = () =>
   {
     total_price += ( Number( item.price ) * Number( item.quantity ) )
   } )
-  price_total_digit.textContent = Math.floor(total_price) + ".00"
+  price_total_digit.textContent = Math.floor( total_price ) + ".00"
   console.log( cart_product_list )
 }
 
@@ -116,7 +154,7 @@ const updateCart = ( img, name, price, id ) =>
 
   const new_item_name = document.createElement( 'div' )
   new_item_name.className = "item-name"
-  new_item_name.innerText = name.slice(0, 35) + "...";
+  new_item_name.innerText = name.slice( 0, 35 ) + "...";
 
   //remove from-cart
   const remove_from_button = document.createElement( 'div' )
@@ -210,18 +248,9 @@ const productFragment = ( cat, name, price, id, img ) =>
   add_to_cart_button.className = "add-to-cart-button"
   add_to_cart_button.innerText = "Add To Cart"
   add_to_cart_button.addEventListener( "click", ( e ) =>
-  {  cart_product_list.forEach( item =>
-    {
-      if ( item.id === id )
-      {
-        e.target.textContent = "view in cart"
-        e.target.style.background = "red"
-        return;
-      }
-    } )
+  {
     addToCart( cat, id )
     updateTotalPrice()
-
   } )
 
   //img-container
