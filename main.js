@@ -86,7 +86,7 @@ const updateTotalPrice = () =>
   {
     total_price += ( Number( item.price ) * Number( item.quantity ) )
   } )
-  price_total_digit.textContent = total_price
+  price_total_digit.textContent = Math.floor(total_price) + ".00"
   console.log( cart_product_list )
 }
 
@@ -116,7 +116,7 @@ const updateCart = ( img, name, price, id ) =>
 
   const new_item_name = document.createElement( 'div' )
   new_item_name.className = "item-name"
-  new_item_name.innerText = name;
+  new_item_name.innerText = name.slice(0, 35) + "...";
 
   //remove from-cart
   const remove_from_button = document.createElement( 'div' )
@@ -131,6 +131,7 @@ const updateCart = ( img, name, price, id ) =>
       ( item.id == id ) && console.log( cart_product_list.splice( item_index, 1 ) )
     }
     )
+    updateTotalPrice()
   } )
 
 
