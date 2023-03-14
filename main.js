@@ -8,6 +8,8 @@ const site_body = document.querySelector( '#overlay' )
 const cart_item_container = document.querySelector( '.cart-item-container' )
 const products_containers = document.querySelectorAll( '.products' )
 const price_total_digit = document.querySelector( ".price-total-digit" )
+const search_input = document.getElementsByClassName( "search-input" )[ 0 ];
+const search_button = document.getElementsByClassName( "search-button" )[ 0 ];
 const cart_product_list = []
 const showCart = () =>
 {
@@ -279,21 +281,37 @@ const productFragment = ( cat, name, price, id, img ) =>
   )
 }
 
-products_containers.forEach( ( container, containerIndex, containerArrary ) =>
+const DisplayAllProducts = ( seacrh_input_value = "" ) =>
 {
-  var num = 0
-  const product_name_list = [ "phones", "tabs", "laptops", "monitors" ]
+  seacrh_input_value && products_containers.forEach( ( container, containerIndex ) =>
+  {
+    container.innerHTML = ""
+  } )
 
-  fetch( "database/data.json" )
-    .then( res => res.json() )
-    .then( data =>
-    {
-      // console.log( product_name_list[ containerIndex ] )
-      data[ product_name_list[ containerIndex ] ].forEach( item => container.appendChild( productFragment( product_name_list[ containerIndex ], item.name, item.price, item.id, item.img ) ) )
-      // console.log( container.innerHTML )
-    } )
+  // console.log( container.innerHTML )
+  products_containers.forEach( ( container, containerIndex ) =>
+  {
+    var num = 0
+    const product_name_list = [ "phones", "tabs", "laptops", "monitors" ]
+
+    fetch( "database/data.json" )
+      .then( res => res.json() )
+      .then( data =>
+      {
+        // console.log( product_name_list[ containerIndex ] )
+        data[ product_name_list[ containerIndex ] ].forEach( item =>
+        {
+          // container.appendChild( productFragment( product_name_list[ containerIndex ], item.name, item.price, item.id, item.img ) )
+          item.name.includes( seacrh_input_value ) &&
+            container.appendChild( productFragment( product_name_list[ containerIndex ], item.name, item.price, item.id, item.img ) )
+        } )
+        // console.log( container.innerHTML )
+      } )
+  } )
+}
+
+DisplayAllProducts()
+search_input.addEventListener( 'keyup', () =>
+{
+  DisplayAllProducts( search_input.value )
 } )
-
-// fetch( "database/data.json" )
-  // .then( res => res.json() )
-  // .then( data => console.log( data[ product_name_list ].map( elm => elm ) ) )
