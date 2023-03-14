@@ -1,105 +1,117 @@
 {
  "phones": [
   {
-   "name": "Iphone 6 pro",
-   "price": "120",
-   "img": "imgs/img10.png",
+   "name": "Apple iPhone 11, 64GB, Black - Unlocked (Renewed)",
+   "price": "318.05",
+   "img": "imgs/31PpUfTCiFL._AC_.jpg",
    "id": 41
   },
   {
-   "name": "Samsung fold",
-   "price": "200",
-   "img": "imgs/img9.png",
+   "name": "AMSUNG Galaxy Z Fold 3 5G Cell Phone, Factory Unlocked 2-in-1 Android Smartphone Tablet",
+   "price": "1049.49",
+   "img": "imgs/71MFE2UY6-L._AC_SY355_.jpg",
    "id": 42
   },
   {
-   "name": "Infinix hot 7",
+   "name": "Xperia PRO-I all carriers 5G smartphone with 1-inch image sensor, triple camera array and 120Hz 6.5",
    "price": "1200",
-   "img": "imgs/img6.png",
+   "img": "imgs/41XydBYdgRL._AC_SX679_.jpg",
    "id": 43
   },
   {
-   "name": "Techno Spark 9",
-   "price": "1200",
-   "img": "imgs/img3.png",
+   "name": "Google Pixel 6-5G Android Phone - Unlocked Smartphone with Wide and Ultra Wide Lens - 128 GB - Sorta Seafoam (Renewed)",
+   "price": "239.99",
+   "img": "imgs/81eLhDX1TRL._AC_SX522_.jpg",
    "id": 44
   }
  ],
  "tabs": [
   {
-   "name": "Vivo Tab",
+   "name": "SAMSUNG Galaxy Tab A8 10.5” 32GB Android Tablet w/ LCD Screen, Long Lasting Battery, Kids Content, Smart Switch, Expandable Memory",
    "price": "100",
-   "img": "imgs/img8.png",
+   "img": "imgs/61fV4UeHeLL._AC_SX450_.jpg",
    "id": 31
   },
   {
-   "name": "Nokia Tab",
-   "price": "250",
-   "img": "imgs/img11.png",
+   "name": "Apple 2021 10.2-inch iPad (Wi-Fi + Cellular, 64GB)",
+   "price": "376.19",
+   "img": "imgs/61y9K3gDOqL._AC_SX342_.jpg",
    "id": 32
   },
   {
-   "name": "Samsung tablet",
-   "price": "400",
-   "img": "imgs/img1.png",
+   "name": "SAMSUNG Galaxy Tab A7 Lite 8.7 32GB WiFi Android Tablet w/ Long Lasting Battery, Compact, Slim Design, Sturdy Metal Frame",
+   "price": "129",
+   "img": "imgs/819hAP4xoGS._AC_SX355_.jpg",
    "id": 33
   },
   {
-   "name": "Apple Tab",
-   "price": "310",
-   "img": "imgs/img3.png",
+   "name": "Lenovo Tab P11 Pro Gen 2, 11.2 Touch 420 nits, 6GB, 128GB, Android 12 ZAB50101US",
+   "price": "385",
+   "img": "imgs/512qVuZBjFL._AC_SY355_.jpg",
    "id": 34
   }
  ],
  "laptops": [
   {
-   "name": "Asus",
-   "price": "1200",
-   "img": "imgs/img4.png",
+   "name": "HP ENVY x360 2-in-1 Laptop 15-ew0007TU + screen cleaning kit",
+   "price": "7999.00",
+   "img": "imgs/HP-ENVY-x360 2-in-1-Laptop-15-ew0007TU-screen-cleaning-kit.webp",
    "id": 21
   },
   {
-   "name": "Hp elite book",
-   "price": "1200",
-   "img": "imgs/img2.png",
+   "name": "13.3-inch Dell Latitude 3340 Intel Core i5 Laptop",
+   "price": "255",
+   "img": "imgs/13.3-inch-Dell-Latitude-3340 Intel-Core-i5-Laptop.jpg",
    "id": 22
   },
   {
-   "name": "Hp pro book",
-   "price": "1200",
-   "img": "imgs/img10.png",
+   "name": "Apple 2022 MacBook Pro Laptop with M2 chip",
+   "price": "1011.12",
+   "img": "imgs/61bX2AoGj2L._AC_SX342_.jpg",
+   "id": 27
+  },
+  {
+   "name": "ASUS Chromebook CX1, 15.6 Full HD NanoEdge Display",
+   "price": "249",
+   "img": "imgs/81jIGNqTjmL._AC_SY450_.jpg",
+   "id": 45
+  },
+  {
+   "name": "HP Pavilion Aero Laptop 13-be1015AU",
+   "price": "9499.00",
+   "img": "imgs/HP-Pavilion-Aero-Laptop-13-be1015AU.webp",
    "id": 23
   },
   {
-   "name": "Lenovo",
-   "price": "1200",
-   "img": "imgs/img6.png",
+   "name": "Dell Inspiron 15 3000 Series 3511 Laptop",
+   "price": "599",
+   "img": "imgs/61KwCmF0bdL.__AC_SX300_SY300_QL70_FMwebp_.webp",
    "id": 24
   }
  ],
  "monitors": [
   {
-   "name": "LG 12ft Display",
-   "price": "1200",
-   "img": "imgs/img1.png",
+   "name": "HP ENVY All-in-One desktop PC",
+   "price": "29999.00",
+   "img": "imgs/HP-ENVY-All-in-One-desktop-PC.webp",
    "id": 1
   },
   {
-   "name": "LG Natural Display",
-   "price": "1200",
-   "img": "imgs/img3.png",
+   "name": "Dell P2422H 24 16:9 IPS Computer Monitor Screen with Display Port Cable and USB 3.0 Upstream Cable - New Model",
+   "price": "250.51",
+   "img": "imgs/71NN-PW+pdL._AC_SL1500_.jpg",
    "id": 11
   },
   {
-   "name": "LG 45inch LED ",
-   "price": "1200",
-   "img": "imgs/img4.png",
+   "name": "Dell Inspiron 15 3000 Series 3511 Laptop",
+   "price": "599",
+   "img": "imgs/61KwCmF0bdL.__AC_SX300_SY300_QL70_FMwebp_.webp",
    "id": 12
   },
   {
-   "name": "Samsung 45inch LED ",
-   "price": "1200",
-   "img": "imgs/img2.png",
+   "name": "Dell OptiPlex Computer Desktop PC,",
+   "price": "245.49",
+   "img": "imgs/91Fb+Pcxe-L._AC_SX300_SY300_.jpg",
    "id": 13
   }
  ]

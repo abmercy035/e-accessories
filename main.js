@@ -168,12 +168,12 @@ const updateCart = ( img, name, price, id ) =>
   const decrement_btn_img = document.createElement( 'img' )
   decrement_btn_img.src = "icons/caret_down.svg"
   decrement_btn_img.className = "increment-qunatity"
-  decrement_btn_img.addEventListener( "click", ( e) =>
+  decrement_btn_img.addEventListener( "click", ( e ) =>
   {
     Number( e.target.parentElement.parentElement.children[ 1 ].innerText ) && --( e.target.parentElement.parentElement.children[ 1 ].innerText );
     cart_product_list.forEach( item =>
     {
-        ( item.id == id ) && item.quantity && --item.quantity
+      ( item.id == id ) && item.quantity && --item.quantity
       updateTotalPrice()
     } )
   } )
@@ -208,16 +208,25 @@ const productFragment = ( cat, name, price, id, img ) =>
   const add_to_cart_button = document.createElement( 'div' )
   add_to_cart_button.className = "add-to-cart-button"
   add_to_cart_button.innerText = "Add To Cart"
-  add_to_cart_button.addEventListener( "click", () =>
-  {
+  add_to_cart_button.addEventListener( "click", ( e ) =>
+  {  cart_product_list.forEach( item =>
+    {
+      if ( item.id === id )
+      {
+        e.target.textContent = "view in cart"
+        e.target.style.background = "red"
+        return;
+      }
+    } )
     addToCart( cat, id )
     updateTotalPrice()
+
   } )
 
   //img-container
   const new_item_eLem_img = document.createElement( 'img' )
   new_item_eLem_img.src = img
-  new_item_eLem_img.loading = "lazy"
+  new_item_eLem_img.loading = "eager"
   new_item_eLem_img.alt = "item-img"
   const new_item_eLem_img_container = document.createElement( 'div' )
   new_item_eLem_img_container.className = "item-img"
