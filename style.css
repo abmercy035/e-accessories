@@ -316,7 +316,7 @@ header {
   grid-area: header;
   position: sticky;
   align-items: center;
-  top: 0px;
+  top: -2px;
   z-index: 3;
   background-color: #222222;
   padding: 30px;
@@ -394,9 +394,10 @@ header {
   padding: 5px 0px;
   justify-content: center;
   font-size: var(--medium-fs);
-  color: var(--product-nc);
+  color: var(--product-pc);
   border: 0;
   background-color: var(--btn-tc);
+  font-weight: 700;
 }
 
 .search .search-field .search-input::placeholder {

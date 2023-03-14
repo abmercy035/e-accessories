@@ -20,7 +20,8 @@
 
   .site-identity > :is(.cart-icon, .site-nav-icon) {
     display: flex;
-    max-width: 30px;
+    width: 40px;
+    max-width: 40px;
   }
 
   .site-identity > :is(.cart-icon, .site-nav-icon) > img {
