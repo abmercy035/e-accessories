@@ -302,7 +302,7 @@ const DisplayAllProducts = ( seacrh_input_value = "" ) =>
         data[ product_name_list[ containerIndex ] ].forEach( item =>
         {
           // container.appendChild( productFragment( product_name_list[ containerIndex ], item.name, item.price, item.id, item.img ) )
-          item.name.includes( seacrh_input_value ) &&
+          ( ( item.name ).toLowerCase() ).includes( seacrh_input_value.toLowerCase() ) &&
             container.appendChild( productFragment( product_name_list[ containerIndex ], item.name, item.price, item.id, item.img ) )
         } )
         // console.log( container.innerHTML )
