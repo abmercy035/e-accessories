@@ -29,8 +29,12 @@
   }
 
   .site-identity .logo-container {
-    width: 20%;
-    height: 50%;
+    width: 40%;
+    height: 100%;
+  }
+
+  .site-identity .logo-container img {
+    border-radius: 100px;
   }
 
   .search {
@@ -117,7 +121,7 @@
 
   .product-containers .products-item-container .product-item-title {
     background-color: #222222;
-    border:solid 1px rgb(59, 59, 59);
+    border: solid 1px rgb(59, 59, 59);
     font-size: var(--x-large-fs);
   }
 
@@ -163,7 +167,7 @@
   .product-containers .products-item-container .product-item-title {
     background-color: #222222;
     font-size: var(--xx-large-fs);
-    border:solid 1px rgb(59, 59, 59);
+    border: solid 1px rgb(59, 59, 59);
   }
 
   .product-containers .products-item-container .products .product-items {
